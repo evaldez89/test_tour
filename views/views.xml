@@ -1,0 +1,25 @@
+<odoo>
+  <data>
+    
+    
+    <!-- VIEWS: "Human readable name"
+    
+        - Model·········: model
+        - Base Addons···: base    
+    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    
+    <!-- Tree view for "model" -->
+    <record id="view_partner_tree" model="ir.ui.view">
+        <field name="name">Lista de Contactos</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_tree" />
+        <field name="arch" type="xml">
+            <field name="phone" position="before">
+              <field name="responsable" />
+            </field>
+        </field>
+    </record>
+
+    
+  </data>
+</odoo>

@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_custom/test_tour_custom/test_tour,custom/test_tour.custom/test_tour,model_custom/test_tour_custom/test_tour,,1,0,0,0
