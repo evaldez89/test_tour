@@ -11,8 +11,8 @@ odoo.define('example.tour', function(require) {
     tour.register('example_tour', {
         url: "/web",
     }, [tour.STEPS.MENU_MORE, {
-        trigger: '.o_app[data-menu="110"]',
-        content: _t('<b>Probando </b><br/><i>Es que se sabe.</i>'),
-        position: 'bottom',
+        trigger: '.o_app[data-menu-xmlid="contacts.menu_contacts"], .oe_menu_toggler[data-menu-xmlid="contacts.menu_contacts"]',
+        content: _t("Listo para el tour? Esto es una <b>Prueba</b>."),
     }]);
-}); 
+    
+});
